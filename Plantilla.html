@@ -6,7 +6,7 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="author" content="Alumno">
+<meta name="author" content="Carlos Rivas">
 
 <title>Plantilla Proyecto</title>
 <style>
@@ -20,40 +20,6 @@ ul.task-list li input[type="checkbox"] {
   width: 0.8em;
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
-}
-/* CSS for syntax highlighting */
-pre > code.sourceCode { white-space: pre; position: relative; }
-pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
-pre > code.sourceCode > span:empty { height: 1.2em; }
-.sourceCode { overflow: visible; }
-code.sourceCode > span { color: inherit; text-decoration: inherit; }
-div.sourceCode { margin: 1em 0; }
-pre.sourceCode { margin: 0; }
-@media screen {
-div.sourceCode { overflow: auto; }
-}
-@media print {
-pre > code.sourceCode { white-space: pre-wrap; }
-pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
-}
-pre.numberSource code
-  { counter-reset: source-line 0; }
-pre.numberSource code > span
-  { position: relative; left: -4em; counter-increment: source-line; }
-pre.numberSource code > span > a:first-child::before
-  { content: counter(source-line);
-    position: relative; left: -1em; text-align: right; vertical-align: baseline;
-    border: none; display: inline-block;
-    -webkit-touch-callout: none; -webkit-user-select: none;
-    -khtml-user-select: none; -moz-user-select: none;
-    -ms-user-select: none; user-select: none;
-    padding: 0 4px; width: 4em;
-  }
-pre.numberSource { margin-left: 3em;  padding-left: 4px; }
-div.sourceCode
-  {   }
-@media screen {
-pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
 </style>
 
@@ -90,7 +56,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <div>
     <div class="quarto-title-meta-heading">Author</div>
     <div class="quarto-title-meta-contents">
-             <p>Alumno </p>
+             <p>Carlos Rivas </p>
           </div>
   </div>
     
@@ -106,19 +72,15 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <p>Fecha de entrega: Jueves 28 de Septiembre 23:59.</p>
 <section id="definición" class="level3">
 <h3 class="anchored" data-anchor-id="definición">Definición</h3>
-<p>Definir y describir activo a estudiar, acompañar con datos (tributa a indicador de Contexto) y con referencias científicas realizando una investigacion relacionada a articulos ubicados en la base de datos de Web of Science, con una calificacion Q1-Q2 y referenciada varias veces (Esto se verá en el tutorial de la semana 5).</p>
-<p>El activo CMPC tiene un valor promedio para el intervalo igual a 1395</p>
+<p>Parque Arauco S.A, es una empresa inmobiliaria chilena que está centrada principalmente en la explotación de centros comerciales, contando con 5 centros comerciales “Mall Arauco” en distintas comunas de Santiago, Chile. Además, tiene 4 centros comerciales distribuidos en otras ciudades del país. Esta empresa pertenece al principal indice bursatil de Chile, llamado IPSA, por lo que está dentro de las 30 acciones con mayor presencia bursatil, lo que la convierte en una de las empresas más importantes a nivel país.</p>
+<p>El paper “Neoliberal Lakeside Residentialism: Real Estate Developmente and the Sustainable Utopia in Environmentally Fragile Areas” habla del desarrollo inmobiliario junto al lago, lo que nos dice como a evolucionado la comercializacion en ambientes fragiles para la construccion de residencias, creando una especie de “utopia verde” para los residentes pero lo que a la vez perjudica a la sostenibilidad ambiental y a las areas de turismo, ya que estas son cerradas por las construcciones. Esto termina dañando el territorio ambiental y social por lo que se deberian realizar regulaciones para conservar el ambiente y cultura.</p>
+<p>fuente: <a href="https://www.webofscience.com/wos/woscc/full-record/WOS:000845786900001" class="uri">https://www.webofscience.com/wos/woscc/full-record/WOS:000845786900001</a></p>
 <div class="cell">
 <div class="cell-output-display">
 <p><img src="Plantilla_files/figure-html/CMPCline-1.png" class="img-fluid" width="672"></p>
 </div>
 </div>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>CMPC <span class="sc">%&gt;%</span></span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>    <span class="fu">ggplot</span>(<span class="fu">aes</span>(<span class="at">x =</span> date, <span class="at">y =</span> close)) <span class="sc">+</span></span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>    <span class="fu">geom_candlestick</span>(<span class="fu">aes</span>(<span class="at">open =</span> open, <span class="at">high =</span> high, <span class="at">low =</span> low, <span class="at">close =</span> close)) <span class="sc">+</span></span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>    <span class="fu">labs</span>(<span class="at">title =</span> <span class="st">"AAPL Candlestick Chart"</span>, <span class="at">y =</span> <span class="st">"Closing Price"</span>, <span class="at">x =</span> <span class="st">""</span>) <span class="sc">+</span></span>
-<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>    <span class="fu">theme_tq</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output-display">
 <p><img src="Plantilla_files/figure-html/CMPCcandle-1.png" class="img-fluid" width="672"></p>
 </div>
@@ -126,73 +88,56 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </section>
 <section id="motivación" class="level3">
 <h3 class="anchored" data-anchor-id="motivación">Motivación</h3>
-<p>Establecer la relevancia o potencial interés específico del activo que justifique el porque realizar la investigacion a este activo y no a otros. Argumentar haciendo referencia a datos o noticias actuales que motiven el estudio de este activo.</p>
+<p>Parque Arauco S.A al ser una empresa inmobiliaria y estar dentro del IPSA, la convierte en una empresa bastante importante a nivel nacional, además al estar centrada en la explotación de centros comerciales contribuye considerablemente al consumo y economia local.</p>
+<p>Esta empresa tambien tiene presencia a nivel internacional, especificamente en Colombia desde 2008 y en Perú desde 2005.</p>
+<p>En el ultimo pais mencionado, la empresa invertirá cerca de 109 millones de dolares en 3 proyectos, los que abarcan; un edificio multifamiliar en el distrito de Miraflores, un nuevo centro comercial llamado “Parque La Molina” en el distrito de La Molina y una ampliación para el centro comercial “MegaPlaza Independencia”, este es el mas grande en Perú.</p>
+<p>Por lo dicho anteriomente se puede notar que Parque Arauco S.A, además de ser importante a nivel nacional, tambien lo es a nivel internacional, en donde está construyendo espacios para las personas, tanto a nivel comercial como familiar. Tambien se puede observar que es una empresa que se sigue expandiendo en los paises donde se encuentra. Por lo tanto es un sector bastente importante que motiva la estudio.</p>
+<p>fuente: <a href="https://www.peru-retail.com/parque-arauco-invertira-mas-de-us-100-millones-en-peru-estos-proyectos-desarrollara/" class="uri">https://www.peru-retail.com/parque-arauco-invertira-mas-de-us-100-millones-en-peru-estos-proyectos-desarrollara/</a></p>
 </section>
 <section id="contexto" class="level3">
 <h3 class="anchored" data-anchor-id="contexto">Contexto</h3>
-<p>Ingesta datos del activo y provee un análisis de estadística descriptiva simple junto con el análisis de una variable económica de contexto. Ejemplo: Si el activo es una minera, la variable puede ser el precio del metal. Acompañar este analisis con graficos, riesgos, horizonte de inversion, rentabilidad del activo, entre otros.</p>
+<p>El activo principal es Parque Arauco S.A (PARAUCO.SN) y las dos variables son el dolar estadounidense versus el peso chileno (CLP=X) y el cobre valorado en usd (HG=F), estas variables estan relacionadas con el activo principal ya que la empresa hace inversiones denominadas en dolares estadounidenses por lo que es importante saber el precio del dolar estadounidense versus el peso chileno, al ser esta una empresa chilena, por otro lado el cobre se utiliza en las construcciones de edificios para el cableado, tuberias de agua o gas, sistemas termicos, etc.</p>
 <div class="cell">
 <div class="cell-output-display">
 <p><img src="Plantilla_files/figure-html/context-1.png" class="img-fluid" width="672"></p>
 </div>
 </div>
-<p>Ejemplos:</p>
-<div class="columns">
-<div class="column" style="width:50%;">
-<div class="quarto-figure quarto-figure-left">
-<figure class="figure">
-<p><img src="photos/Captura%20de%20pantalla%202023-08-22%20102815.png" class="img-fluid figure-img" width="261"></p>
-</figure>
-</div>
-</div><div class="column" style="width:50%;">
-<div class="quarto-figure quarto-figure-right">
-<figure class="figure">
-<p><img src="photos/Captura%20de%20pantalla%202023-08-22%20103005.png" class="img-fluid figure-img" width="254"></p>
-</figure>
-</div>
-</div>
-</div>
-<div class="quarto-figure quarto-figure-left">
-<figure class="figure">
-<p><img src="photos/Captura%20de%20pantalla%202023-08-22%20103037.png" class="img-fluid figure-img" width="256"></p>
-</figure>
-</div>
-</section>
-<section id="tareas-semana-4" class="level3">
-<h3 class="anchored" data-anchor-id="tareas-semana-4">Tareas Semana 4</h3>
-<ul>
-<li>Utilizar otros ejemplos de visualización: https://business-science.github.io/tidyquant/articles/TQ04-charting-with-tidyquant.html</li>
-<li>¿Para que sirven las siguientes líneas en los bloques de código?</li>
-</ul>
-<pre><code>#| warning: false
-#| echo: false</code></pre>
-<ul>
-<li>Definir activos en base a cada una de las <a href="https://uandes.instructure.com/courses/28266/pages/proyecto-del-curso">industrias definidas</a>: Inmobiliaria, Banca, Energía</li>
-<li>Buscar referencias científicas en la literatura para dar contexto al análisis</li>
-</ul>
 </section>
 <section id="análisis-de-largo-plazo" class="level3">
 <h3 class="anchored" data-anchor-id="análisis-de-largo-plazo">Análisis de Largo Plazo</h3>
 <section id="caracterización-deuda-aplicación-cap.-15" class="level4">
 <h4 class="anchored" data-anchor-id="caracterización-deuda-aplicación-cap.-15">Caracterización deuda (Aplicación cap. 15)</h4>
-<p>Describir el activo especificando en que realiza sus inversiones (por tipo de instrumento). Especificar sus acciones comunes, preferentes y bonos relacionados aplicando lo aprendido en el capitulo respectivo.</p>
-<p>Ejemplo de un fondo mutuo como activo a analizar:</p>
-<p><img src="photos/image_2023-08-22_112358830.png" class="img-fluid" width="353"></p>
+<p><img src="photos/Captura%20de%20pantalla%202023-09-27%20222710.png" class="img-fluid"></p>
+<p>No se logró encontrar el desglose de activos de Parque Arauco S.A. Observando el estado de activos proporcionado en el estado de resultados de la empresa, se aprecia que desde diciembre de 2022 se ha aumentado aproximadamente en 150.000 millones de pesos chilenos, teniendo para junio de 2023 cerca de 3.100.000 millones de pesos chilenos en activos.</p>
+<p><img src="photos/Captura%20de%20pantalla%202023-09-27%20234334.png" class="img-fluid"></p>
+<p>Por otro lado, observando los indicadores financieros se ve que la deuda financiera de la empresa ha aumentado en el segundo trimestre de este año comparado al mismo periodo del año pasado, un factor a considerar es que la empresa puesto en marcha distintos proyectos que necesitan bastante presupuesto, como lo son la construccion de un edificio multifamiliar, un shopping nuevo en Perú y una ampliación en otro loca del mismo país.</p>
+<p>fuente:<a href="https://parquearauco.modyocdn.com/uploads/c3653324-016f-4987-8192-2778e0645e05/original/Parque_Arauco_Earnings_2T23.pdf" class="uri">https://parquearauco.modyocdn.com/uploads/c3653324-016f-4987-8192-2778e0645e05/original/Parque_Arauco_Earnings_2T23.pdf</a></p>
+<p>Las acciones de la empresa son ordinarias y el controlador de esta es Inmobiliaria Atlantis S.A que cuenta con una participación del 25.83% del total de acciones emitidas, siendo estas 212.503.700</p>
+<p>fuente: <a href="https://www.cmfchile.cl/sitio/aplic/serdoc/ver_sgd.php?s567=bb0f2e9a94f7b79adc90a3b9e852284fVFdwQmVFNXFRWGxOUkVGNFQwUk5lVTFuUFQwPQ==&amp;secuencia=-1&amp;t=1695867400" class="uri">https://www.cmfchile.cl/sitio/aplic/serdoc/ver_sgd.php?s567=bb0f2e9a94f7b79adc90a3b9e852284fVFdwQmVFNXFRWGxOUkVGNFQwUk5lVTFuUFQwPQ==&amp;secuencia=-1&amp;t=1695867400</a></p>
+<p>En bonos se tienen diversas lineas y series, de acuerdo al prospecto de bonos corporativos publicado en la CMF en 2020, se agregan las series “Y”, “Z” y “AA”, con clasificaciones de riesgo AA en todas las series por parte de las clasificadoras de riesgo limitada Feller Rate e ICR, por lo que se puede considerar una empresa confiable. Además, segun la noticia del diario financiero, este año Parque Arauco S.A emitirá bonos por UF 3 millones con vencimiento en 2044.</p>
+<p>fuentes: <a href="https://www.cmfchile.cl/sitio/aplic/serdoc/ver_sgd.php?s567=a4d3a62c02fdd4ae30fb6bb1c4096a7cVFdwQmVVMUVRVEpOUkVreVQxUm5kMDVSUFQwPQ==&amp;secuencia=1" class="uri">https://www.cmfchile.cl/sitio/aplic/serdoc/ver_sgd.php?s567=a4d3a62c02fdd4ae30fb6bb1c4096a7cVFdwQmVVMUVRVEpOUkVreVQxUm5kMDVSUFQwPQ==&amp;secuencia=1</a></p>
+<p><a href="https://www.df.cl/mercados/renta-fija/parque-arauco-emite-bono-por-uf-3-millones-en-su-primera-colocacion" class="uri">https://www.df.cl/mercados/renta-fija/parque-arauco-emite-bono-por-uf-3-millones-en-su-primera-colocacion</a></p>
 </section>
 <section id="caracterización-de-emisiones-históricas-aplicación-cap.-20" class="level4">
 <h4 class="anchored" data-anchor-id="caracterización-de-emisiones-históricas-aplicación-cap.-20">Caracterización de emisiones históricas (Aplicación cap. 20)</h4>
-<p>Describir el proceso de emision de acciones paso a paso del activo seleccionado, caracterizando el tipo de colocacion que utilizaron en contraste con el procedimiento basico realizado en el capitulo respectivo.</p>
-<p><img src="photos/image_2023-08-22_111601715.png" class="img-fluid" width="352"></p>
+<p>El prospecto emision de acciones de Parque Arauco S.A publicado por la comision para el mercado financiero (CMF) publicado el 11 de febrero del 2016 dice que, el numero de acciones suscritas y pagas es de 819.464.670, donde el capital se divide en acciones ordinarias y no hay series de acciones. El 30 de noviembre del 2015 se publica la emision de 78.000.000 acciones, el 10% de estas serán destinadas a planes de compesacion para ejecutivos de Parque Arauco S.A y de sus filiales, el tipo de colocacion será por intermediarios y los colocadores serán Banchile Corredores de Bolsa S.A e Itau BBA Corredor de Bolsa Limitada, sin plazo de colocacion.</p>
+<p>Esto difiere del procedimiento basico descrito en el capitulo 20 del libro ya que no es tan especifico en cuanto a los pasos realizados para la colocacion, sobre todo en el ultimo paso ya que el prospecto no especifica el precio de la compra/venta en el mercado.</p>
+<p><img src="photos/Captura%20de%20Pantalla%202023-09-27%20a%20la(s)%2019.49.13.png" class="img-fluid"></p>
+<p>fuente: <a href="https://www.cmfchile.cl/sitio/aplic/serdoc/ver_sgd.php?s567=bb0f2e9a94f7b79adc90a3b9e852284fVFdwQmVFNXFRWGxOUkVGNFQwUk5lVTFuUFQwPQ==&amp;secuencia=-1&amp;t=1695853034" class="uri">https://www.cmfchile.cl/sitio/aplic/serdoc/ver_sgd.php?s567=bb0f2e9a94f7b79adc90a3b9e852284fVFdwQmVFNXFRWGxOUkVGNFQwUk5lVTFuUFQwPQ==&amp;secuencia=-1&amp;t=1695853034</a></p>
 </section>
 <section id="relación-con-activos-derivados" class="level4">
 <h4 class="anchored" data-anchor-id="relación-con-activos-derivados">Relación con activos derivados</h4>
-<p>Describe un activo derivado relacionado, mostrando datos de su evolucion. Tambien mencionar porque es importante este derivado para la activo en cuestion.</p>
-<p>Aplicar procedimiento de valoración de un derivado por inclusión en estructura de retornos (a profundizar en tutorial de la unidad de Derivados).</p>
+<p>Un activo derivado es el de Cencosud ya que Parque Arauco S.A tiene contratos a largo plazo con arrendatarios y tiendas anclas fijas con alta calidad crediticia. En los centros comerciales de Parque Arauco S.A podemos encontrar Paris, retail perteneciente a Cencosud.</p>
+<p>fuente:<a href="https://icrchile.cl/wp-content/uploads/2023/04/6552s-1.pdf" class="uri">https://icrchile.cl/wp-content/uploads/2023/04/6552s-1.pdf</a></p>
+<p>En el siguiente graficos podemos ver los precios de los dos activos, la linea azul pertenece a Parque Arauco S.A y la negra a Cencosud.</p>
+<p><img src="photos/Captura%20de%20pantalla%202023-09-28%20174414.png" class="img-fluid"></p>
+<p>Se puede observar que existe una relacion entre estos dos activos, en especial en la zona del rectangulo que corresponde a los ultimos 5 años, en donde la relacion es mucho mas fuerte que en periodos anteriores.</p>
 </section>
 </section>
 <section id="reporte-grupal" class="level3">
 <h3 class="anchored" data-anchor-id="reporte-grupal">Reporte grupal</h3>
-<p>Definicion de un balance de portafolio sobre los 3 activos del grupo, donde se especifique los pesos de cada activo de tal forma que maximize el retorno de la cartera.</p>
+<p>Las ponderaciones son las siguientes: 50% banco, 35% energia y 15% inmobiliaria</p>
+<p>Escogimos esta distribución ya que actualmente, con las altas tasas de interés, producto de la inflación, los bancos han generado un mayor retorno, lo cual incrementa el ingreso que han ganado y por ende tienen más dinero para realizar inversiones, lo que puede provocar un aumento en su precio de acción. Es debido a esto que le otorgamos un 50% de peso al banco, ya que es la entidad que más retornos nos va a producir. Para poder diversificar el portafolio, le colocamos un 35% al sector de energía, ya que es un sector “neutro”, al cual no le ha ido bien ni mal, sin embargo es un sector de commoditie, por lo cual es usado por toda la población y por ende, su aumento o disminución en el precio no es muy notable. Finalmente, otorgamos un 15% al sector inmobiliario, ya que actualmente es un sector que ha sido muy repercutido por la inflación y las altas tasas de interés, lo que produjo que su precio de acción disminuyera bastante. Creemos que esta tendencia seguirá, por lo que le otorgamos un menor peso en el portafolio.</p>
 </section>
 </section>
 
