@@ -17,7 +17,7 @@ library(tidyquant)
 
 ## Descripción Activo y Contexto (Hito 1)
 
-Fecha de entrega: Jueves 28 de Septiembre 23:59.
+Fecha de entrega: Jueves 28 de Septiembre 23:59
 
 ### Definición
 
